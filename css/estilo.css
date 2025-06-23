@@ -42,6 +42,23 @@ section {
   max-width: 1200px;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.8rem;
+  color: #222;
+  background-color: #ffdd95;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #fff;
+}
+.btn i {
+  margin-right: 0.5rem;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -110,10 +127,27 @@ section {
   background-color: #ffdd95;
   color: #222;
 }
+.header .flex .btn {
+  margin-top: 0;
+  margin-left: auto;
+}
 
 #menu-btn {
   font-size: 2.5rem;
   color: #fff;
   margin-right: 1rem;
   cursor: pointer;
+}
+
+#search-toggler {
+  height: 3.5rem;
+  width: 4.5rem;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  text-align: center;
+  display: none;
 }/*# sourceMappingURL=estilo.css.map */

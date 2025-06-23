@@ -49,6 +49,25 @@ section{
     max-width: 1200px;
 }
 
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.6rem;
+    font-size: 1.8rem;
+    color: $--black;
+    background-color: $--main-color;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $--white;
+    }
+
+    i{
+        margin-right: 0.5rem;
+    }
+}
+
 .header{
     position: sticky;
     top: 0; left: 0; right: 0;
@@ -122,6 +141,11 @@ section{
                 }
             }
         }
+
+        .btn{
+            margin-top: 0;
+            margin-left: auto;
+        }
     }
 }
 
@@ -130,4 +154,17 @@ section{
     color: $--white;
     margin-right: 1rem;
     cursor: pointer;
+}
+
+#search-toggler{
+    height: 3.5rem;
+    width: 4.5rem;
+    line-height: 3.5rem;
+    font-size: 2rem;
+    color: $--white;
+    background-color: $--light-black;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    text-align: center;
+    display: none;
 }
