@@ -71,8 +71,44 @@ section {
   background-color: #1a1a1a;
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
+  display: flex;
   align-items: center;
   gap: 1rem;
+  width: 50rem;
+}
+.header .flex .search-form .search-bar input {
+  width: 100%;
+  background: none;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.header .flex .search-form .search-bar input::--webkit-search-cancel-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.header .flex .search-form .search-bar label {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.header .flex .search-form .search-bar label:hover {
+  color: #ffdd95;
+}
+.header .flex .search-form a {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  height: 4rem;
+  width: 4.5rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+.header .flex .search-form a:hover {
+  background-color: #ffdd95;
+  color: #222;
 }
 
 #menu-btn {

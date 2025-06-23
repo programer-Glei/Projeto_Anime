@@ -78,8 +78,48 @@ section{
                 background-color: $--light-black;
                 border-radius: .5rem;
                 padding: 1rem 1.5rem;
+                display: flex;
                 align-items: center;
                 gap: 1rem;
+                width: 50rem;
+
+                input{
+                    width: 100%;
+                    background: none;
+                    font-size: 1.8rem;
+                    color: $--white;
+
+                    &::--webkit-search-cancel-button{
+                        appearance: none;
+                    }
+                }
+
+                label{
+                    font-size: 2rem;
+                    color: $--white;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: $--main-color;
+                    }
+                }
+            }
+
+            a{
+                display: block;
+                font-size: 2rem;
+                text-align: center;
+                height: 4rem;
+                width: 4.5rem;
+                line-height: 4rem;
+                border-radius: 0.5rem;
+                color: $--white;
+                background-color: $--light-black;
+
+                &:hover{
+                    background-color: $--main-color;
+                    color: $--black;
+                }
             }
         }
     }
