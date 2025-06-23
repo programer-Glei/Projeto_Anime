@@ -57,6 +57,31 @@ section{
     .flex{
         display: flex;
         align-items: center;
+        
+        .logo{
+            margin-right: auto;
+
+            a{
+                font-size: 2.5rem;
+                color: $--white;
+                font-weight: bold;
+                font-style: italic;
+            }
+        }
+
+        .search-form{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .search-bar{
+                background-color: $--light-black;
+                border-radius: .5rem;
+                padding: 1rem 1.5rem;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
     }
 }
 
