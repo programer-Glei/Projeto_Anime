@@ -173,8 +173,15 @@ section {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
+  .header .flex .search-form.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
   .header .flex .search-form .search-bar {
     width: 100%;
+  }
+  body {
+    height: 300rem;
   }
 }
 @media (max-width: 450px) {

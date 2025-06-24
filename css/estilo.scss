@@ -192,11 +192,19 @@ section{
                 padding: 1.5rem;
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 
+                &.active{
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                }
+
                 .search-bar{
                     width: 100%;
                 }
             }
         }
+    }
+
+    body{
+        height: 300rem;
     }
 }
 
