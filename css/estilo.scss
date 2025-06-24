@@ -168,3 +168,40 @@ section{
     text-align: center;
     display: none;
 }
+
+
+/* media querires */
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px){
+    #search-toggler{
+        display: inline-block;
+    }
+
+    .header{
+        .flex{
+            .search-form{
+                position: absolute;
+                top: calc(100% - .1rem); left: 0; right: 0;
+                background-color: $--bg-color;
+                border-top: 0.1rem solid rgba(255,255,255,0.2);
+                padding: 1.5rem;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+                .search-bar{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
