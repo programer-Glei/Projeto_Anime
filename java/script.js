@@ -6,6 +6,14 @@ searchToggler.onclick = () =>{
     searchForm.classList.toggle('active');
 }
 
+let header = document.querySelector('.header');
+
 window.onscroll = () =>{
     searchForm.classList.remove('active');
+
+    if(window.scrollY > 0){
+        header.classList.add('active');
+    }else{
+        header.classList.remove('active');
+    }
 }

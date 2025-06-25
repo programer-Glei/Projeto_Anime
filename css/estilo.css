@@ -66,6 +66,11 @@ section {
   right: 0;
   z-index: 10000;
 }
+.header.active {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
 .header .flex {
   display: flex;
   align-items: center;
@@ -179,9 +184,6 @@ section {
   }
   .header .flex .search-form .search-bar {
     width: 100%;
-  }
-  body {
-    height: 300rem;
   }
 }
 @media (max-width: 450px) {

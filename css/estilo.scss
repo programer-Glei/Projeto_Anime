@@ -73,6 +73,11 @@ section{
     top: 0; left: 0; right: 0;
     z-index: 10000;
 
+    &.active{
+        background-color: rgba(0,0,0, 0.8);
+        backdrop-filter: blur(4px);
+    }
+
     .flex{
         display: flex;
         align-items: center;
@@ -201,10 +206,6 @@ section{
                 }
             }
         }
-    }
-
-    body{
-        height: 300rem;
     }
 }
 
