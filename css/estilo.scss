@@ -154,6 +154,34 @@ section{
     }
 }
 
+.side-bar{
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1100;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+
+    .navbar{
+        height: 100%;
+        width: 35rem;
+        background-color: rgba(0,0,0,0.8);
+        padding: 2rem;
+        overflow-y: scroll;
+        animation: slide-in 0.2s cubic-bezier(.32,.85,.21,1.26);
+    }
+}
+
+@keyframes slide-in {
+    from{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
 #menu-btn{
     font-size: 2.5rem;
     color: $--white;
