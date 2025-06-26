@@ -144,8 +144,9 @@ section {
   right: 0;
   bottom: 0;
   z-index: 1100;
-  background: rgba(0,0,0,0.3);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .side-bar .navbar {
   height: 100%;
@@ -162,7 +163,7 @@ section {
     transform: translateX(-10rem);
   }
   to {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(0);
   }
 }
@@ -184,6 +185,16 @@ section {
   margin-left: 1rem;
   text-align: center;
   display: none;
+}
+
+#close-btn {
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  border: 0.1rem solid #555;
+  border-radius: 5rem;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* media querires */

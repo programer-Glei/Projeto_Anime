@@ -177,7 +177,7 @@ section{
         transform: translateX(-10rem);
     }
     to{
-        opacity: 0;
+        opacity: 1;
         transform: translateX(0);
     }
 }
@@ -200,6 +200,16 @@ section{
     margin-left: 1rem;
     text-align: center;
     display: none;
+}
+
+#close-btn{
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border: 0.1rem solid #555;
+    border-radius: 5rem;
+    display: inline-block;
+    color: $--white;
+    cursor: pointer;
 }
 
 
