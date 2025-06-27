@@ -71,7 +71,7 @@ section{
 .header{
     position: sticky;
     top: 0; left: 0; right: 0;
-    z-index: 10000;
+    z-index: 1000;
 
     &.active{
         background-color: rgba(0,0,0, 0.8);
@@ -160,6 +160,11 @@ section{
     z-index: 1100;
     background: rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
+    display: none;
+
+    &.active{
+        display: block;
+    }
 
     .navbar{
         height: 100%;
@@ -170,22 +175,53 @@ section{
         animation: slide-in 0.2s cubic-bezier(.32,.85,.21,1.26);
 
         #close-btn{
+            margin-bottom: 2rem;
+            padding: 1rem 2rem;
+            border: 0.1rem solid #555;
+            border-radius: 5rem;
+            display: inline-block;
+            color: $--white;
+            cursor: pointer;
+            font-size: 1.8rem;
+
             i{
                 margin-right: 0.5rem;
             }
-
+        
             &:hover{
+                background-color: $--white;
+                color: $--black;
+
                 i{
                     margin-right: 1rem;
                 }
             }
         }
-
+        
         a{
             display: block;
             padding: 0.6rem 0;
             font-size: 1.6rem;
             color: $--main-color;
+
+            &:hover{
+                color: $--white;
+            }
+        }
+
+        .title{
+            background-color: $--light-black;
+            color: $--white;
+            font-size: 2rem;
+            border-radius: 0.5rem;
+            padding: 0.8rem 0;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .row{
+            column-count: 2;
+            column-gap: 2rem;
         }
     }
 }
@@ -203,7 +239,7 @@ section{
 
 #menu-btn{
     font-size: 2.5rem;
-    color: $--white;
+    color: $--main-color;
     margin-right: 1rem;
     cursor: pointer;
 }
@@ -219,22 +255,6 @@ section{
     margin-left: 1rem;
     text-align: center;
     display: none;
-}
-
-#close-btn{
-    margin-bottom: 2rem;
-    padding: 1rem 2rem;
-    border: 0.1rem solid #555;
-    border-radius: 5rem;
-    display: inline-block;
-    color: $--white;
-    cursor: pointer;
-    font-size: 1.8rem;
-
-    &:hover{
-        background-color: $--white;
-        color: $--black;
-    }
 }
 
 

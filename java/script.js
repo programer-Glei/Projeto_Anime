@@ -17,3 +17,12 @@ window.onscroll = () =>{
         header.classList.remove('active');
     }
 }
+
+let menuBtn = document.querySelector('#menu-btn');
+let closeBtn = document.querySelector('#close-btn');
+let sideBar = document.querySelector('.side-bar');
+let navbar = document.querySelector('.side-bar .navbar');
+
+menuBtn.onclick = () =>{
+    sideBar.classList.add('active');
+}
