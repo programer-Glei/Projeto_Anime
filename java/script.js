@@ -26,3 +26,17 @@ let navbar = document.querySelector('.side-bar .navbar');
 menuBtn.onclick = () =>{
     sideBar.classList.add('active');
 }
+
+closeBtn.onclick = () =>{
+    sideBar.classList.remove('active');
+}
+
+window.onclick = (e) =>{
+    if(!navbar.contains(e.target) && e.target !== menuBtn){
+        sideBar.classList.remove('active');
+    }
+
+    if(!searchForm.contains(e.target) && e.target !== searchToggler){
+        searchForm.classList.remove('active');
+    }
+}
