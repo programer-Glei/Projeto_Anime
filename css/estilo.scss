@@ -257,6 +257,15 @@ section{
     display: none;
 }
 
+.footer{
+    background: $--black;
+
+    .list{
+        color: $--white;
+        font-size: 3rem;
+    }
+}
+
 
 /* media querires */
 @media (max-width:1200px){
