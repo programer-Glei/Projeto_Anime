@@ -261,8 +261,32 @@ section{
     background: $--black;
 
     .list{
-        color: $--white;
-        font-size: 3rem;
+        h3{
+            color: $--white;
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: $--light-white;
+            padding: 0.5rem 0;
+        }
+
+        .list-links{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+            padding-top: 1rem;
+
+            a{
+                padding: 0.5rem 1rem;
+                font-size: 1.8rem;
+                color: $--light-white;
+                background-color: $--bg-color;
+            }
+        }
     }
 }
 

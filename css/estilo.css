@@ -235,6 +235,33 @@ section {
   display: none;
 }
 
+.footer {
+  background: #222;
+}
+.footer .list h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+.footer .list p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #aaa;
+  padding: 0.5rem 0;
+}
+.footer .list .list-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding-top: 1rem;
+}
+.footer .list .list-links a {
+  padding: 0.5rem 1rem;
+  font-size: 1.8rem;
+  color: #aaa;
+  background-color: #0d0d0d;
+}
+
 /* media querires */
 @media (max-width: 1200px) {
   html {
