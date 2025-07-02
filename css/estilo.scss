@@ -282,9 +282,50 @@ section{
 
             a{
                 padding: 0.5rem 1rem;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 color: $--light-white;
                 background-color: $--bg-color;
+                border-radius: 0.5rem;
+
+                &:hover{
+                    background-color: $--main-color;
+                    color: $--black;
+                }
+            }
+        }
+    }
+
+    .rows{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        align-items: center;
+        gap: 2rem;
+
+        .extra-links{
+            a{
+                margin-right: 1.5rem;
+                font-size: 1.8rem;
+                color: $--light-white;
+                display: inline-block;
+
+                &:hover{
+                    color: $--white;
+                }
+            }
+        }
+
+        .share{
+            a{
+                font-size: 2rem;
+                height: 4rem;
+                width: 4.5rem;
+                line-height: 4rem;
+                border-radius: .5rem;
+                background-color: $--light-black;
+                color: $--light-white;
+                text-align: center;
+                margin-left: 0.5rem;
             }
         }
     }

@@ -257,9 +257,41 @@ section {
 }
 .footer .list .list-links a {
   padding: 0.5rem 1rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #aaa;
   background-color: #0d0d0d;
+  border-radius: 0.5rem;
+}
+.footer .list .list-links a:hover {
+  background-color: #ffdd95;
+  color: #222;
+}
+.footer .rows {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  align-items: center;
+  gap: 2rem;
+}
+.footer .rows .extra-links a {
+  margin-right: 1.5rem;
+  font-size: 1.8rem;
+  color: #aaa;
+  display: inline-block;
+}
+.footer .rows .extra-links a:hover {
+  color: #fff;
+}
+.footer .rows .share a {
+  font-size: 2rem;
+  height: 4rem;
+  width: 4.5rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  background-color: #1a1a1a;
+  color: #aaa;
+  text-align: center;
+  margin-left: 0.5rem;
 }
 
 /* media querires */
