@@ -326,6 +326,11 @@ section{
                 color: $--light-white;
                 text-align: center;
                 margin-left: 0.5rem;
+
+                &:hover{
+                    background-color: $--main-color;
+                    color: $--black;
+                }
             }
         }
     }
@@ -360,6 +365,27 @@ section{
 
                 .search-bar{
                     width: 100%;
+                }
+            }
+        }
+    }
+
+    .footer{
+        .list{
+            text-align: center;
+
+            .list-links{
+                justify-content: center;
+            }
+        }
+
+        .row{
+            flex-flow: column;
+            text-align: center;
+
+            .extra-links{
+                a{
+                    padding: 1rem;
                 }
             }
         }

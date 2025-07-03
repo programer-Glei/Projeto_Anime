@@ -293,6 +293,10 @@ section {
   text-align: center;
   margin-left: 0.5rem;
 }
+.footer .rows .share a:hover {
+  background-color: #ffdd95;
+  color: #222;
+}
 
 /* media querires */
 @media (max-width: 1200px) {
@@ -321,6 +325,19 @@ section {
   }
   .header .flex .search-form .search-bar {
     width: 100%;
+  }
+  .footer .list {
+    text-align: center;
+  }
+  .footer .list .list-links {
+    justify-content: center;
+  }
+  .footer .row {
+    flex-flow: column;
+    text-align: center;
+  }
+  .footer .row .extra-links a {
+    padding: 1rem;
   }
 }
 @media (max-width: 450px) {
