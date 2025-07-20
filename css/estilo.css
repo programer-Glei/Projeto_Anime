@@ -216,8 +216,40 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 100%, 50%, transparent 30%, rgba(0, 0, 0, 0.9) 60%);
+  background: radial-gradient(circle at 100% 50%, transparent 30%, rgba(0, 0, 0, 0.9) 60%);
   z-index: -1;
+}
+.hero .slide .content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero .slide .content span {
+  font-size: 2rem;
+  color: #ffdd95;
+}
+.hero .slide .content h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  line-height: 1.2;
+  max-width: 50rem;
+  color: #fff;
+}
+.hero .slide .content .flex {
+  display: flex;
+  gap: 1.5rem;
+}
+.hero .slide .content .flex p {
+  font-size: 1.8rem;
+  color: #aaa;
+}
+.hero .slide .content .flex p i {
+  padding-right: 0.8rem;
+  color: #fff;
+}
+.hero .slide .content .buttons {
+  margin: 2rem 0;
 }
 
 @keyframes slide-in {
