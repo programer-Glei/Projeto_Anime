@@ -40,3 +40,9 @@ window.onclick = (e) =>{
         searchForm.classList.remove('active');
     }
 }
+
+var swiper = new Swiper(".hero-slider", {
+    pagination:{
+        el: ".swiper-pagination",
+    },
+});

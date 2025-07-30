@@ -6,6 +6,8 @@
     <!-- custom css file -->
     <link rel="stylesheet" href="css/estilo.css">
     <title>Home</title>
+    <!-- swiper css cdn link-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <!-- header section starts-->
@@ -86,9 +88,9 @@
       </div>
       <!-- hero section starts -->
        <div class="hero">
-        <div class="hero-slider">
-            <div>
-                <div class="slide" style="background: url('img/hero-1.jpg') center/cover no-repeat;">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" style="background: url('img/hero-1.jpg') center/cover no-repeat;">
                     <section class="content">
                         <div>
                             <span>#1 Trending</span>
@@ -107,7 +109,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="slide" style="background: url('img/hero-2.jpg') center/cover no-repeat;">
+                <div class="swiper-slide slide" style="background: url('img/hero-2.jpg') center/cover no-repeat;">
                     <section class="content">
                         <div>
                             <span>#2 Trending</span>
@@ -126,7 +128,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="slide" style="background: url('img/hero-3.jpg') center/cover no-repeat;">
+                <div class="swiper-slide slide" style="background: url('img/hero-3.jpg') center/cover no-repeat;">
                     <section class="content">
                         <div>
                             <span>#3 Trending</span>
@@ -145,7 +147,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="slide" style="background: url('img/hero-4.jpg') center/cover no-repeat;">
+                <div class="swiper-slide slide" style="background: url('img/hero-4.jpg') center/cover no-repeat;">
                     <section class="content">
                         <div>
                             <span>#4 Trending</span>
@@ -164,7 +166,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="slide" style="background: url('img/hero-5.jpg') center/cover no-repeat;">
+                <div class="swiper-slide slide" style="background: url('img/hero-5.jpg') center/cover no-repeat;">
                     <section class="content">
                         <div>
                             <span>#5 Trending</span>
@@ -184,6 +186,7 @@
                     </section>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
        </div>
        <!-- hero section ends -->
@@ -244,6 +247,8 @@
         </section>
        </footer>
        <!-- footer section ends-->
+        <!-- swiper js cdn link -->
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- custom javascript file -->
      <script src="java/script.js"></script>
 </body>
