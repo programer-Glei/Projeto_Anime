@@ -251,6 +251,23 @@ section {
 .hero .slide .content .buttons {
   margin: 2rem 0;
 }
+.hero .slide .content .buttons a:last-child {
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 1.8rem;
+}
+.hero .slide .content .buttons a:last-child i {
+  margin-left: 0.5rem;
+}
+.hero .slide .content .buttons a:last-child:hover {
+  color: #ffdd95;
+}
+.hero .slide .content .description {
+  font-size: 1.8rem;
+  color: #aaa;
+  line-height: 1.8;
+  max-width: 50rem;
+}
 
 @keyframes slide-in {
   from {

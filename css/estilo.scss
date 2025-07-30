@@ -275,6 +275,27 @@ section{
 
             .buttons{
                 margin: 2rem 0;
+
+                a:last-child{
+                    margin-left: 1.5rem;
+                    color: $--white;
+                    font-size: 1.8rem;
+
+                    i{
+                        margin-left: 0.5rem;
+                    }
+
+                    &:hover{
+                        color: $--main-color;
+                    }
+                }
+            }
+
+            .description{
+                font-size: 1.8rem;
+                color: $--light-white;
+                line-height: 1.8;
+                max-width: 50rem;
             }
         }
     }
