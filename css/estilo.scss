@@ -299,6 +299,23 @@ section{
             }
         }
     }
+
+    .swiper-pagination-bullets{
+        bottom: 3rem;
+    }
+
+    .swiper-pagination-bullet{
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: $--white;
+        opacity: 0.5;
+        margin-bottom: 1rem;
+    }
+
+    .swiper-pagination-bullet-active{
+        background-color: $--main-color;
+        opacity: 1;
+    }
 }
 
 @keyframes slide-in {

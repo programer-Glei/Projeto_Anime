@@ -42,7 +42,13 @@ window.onclick = (e) =>{
 }
 
 var swiper = new Swiper(".hero-slider", {
+
+    loop:true,
+    grabCursor:true,
+
     pagination:{
         el: ".swiper-pagination",
+        clickable:true,
+        dynamicBullets:true,
     },
 });

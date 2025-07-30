@@ -268,6 +268,20 @@ section {
   line-height: 1.8;
   max-width: 50rem;
 }
+.hero .swiper-pagination-bullets {
+  bottom: 3rem;
+}
+.hero .swiper-pagination-bullet {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #fff;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+.hero .swiper-pagination-bullet-active {
+  background-color: #ffdd95;
+  opacity: 1;
+}
 
 @keyframes slide-in {
   from {
