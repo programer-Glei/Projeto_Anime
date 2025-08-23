@@ -326,7 +326,7 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.posts-container .post .image img::before {
+.posts-container .post .image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -335,6 +335,33 @@ section {
   bottom: 0;
   background: linear-gradient(rgba(13, 13, 13, 0.8), transparent, rgba(13, 13, 13, 0.8));
   transition: 0.2s linear;
+}
+.posts-container .post .image:hover::before {
+  opacity: 0;
+}
+.posts-container .post .image .type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #222;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 1.5rem;
+}
+.posts-container .post .image .caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #ffdd95;
+  color: #222;
+  border-top-left-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 1.5rem;
+}
+.posts-container .post .image h3 {
+  margin: 1rem 0;
+  font-weight: normal;
 }
 
 @keyframes slide-in {
