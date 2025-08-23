@@ -283,6 +283,29 @@ section {
   opacity: 1;
 }
 
+.trending .posts-container {
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+}
+.trending .posts-container::before, .trending .posts-container::after {
+  content: "";
+  height: 100%;
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.trending .posts-container::before {
+  left: -0.1rem;
+  background: linear-gradient(90deg, rgba(13, 13, 13, 0.8), transparent);
+}
+.trending .posts-container::after {
+  right: -0.1rem;
+  background: linear-gradient(270deg, rgba(13, 13, 13, 0.8), transparent);
+}
+
 @keyframes slide-in {
   from {
     opacity: 0;
@@ -394,12 +417,10 @@ section {
     background-color: #0d0d0d;
     border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
     padding: 1.5rem;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .header .flex .search-form.active {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   .header .flex .search-form .search-bar {
     width: 100%;
@@ -421,5 +442,11 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .hero .slide::before {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .hero .slide .content h3 {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=estilo.css.map */

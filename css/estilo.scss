@@ -318,6 +318,34 @@ section{
     }
 }
 
+.trending{
+    .posts-container{
+        display: block;
+        position: relative;
+        overflow-x: hidden;
+
+        &::before,&::after{
+            content: '';
+            height: 100%;
+            width: 5rem;
+            position: absolute;
+            top: 0;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        &::before{
+            left: -0.1rem;
+            background: linear-gradient(90deg, rgba(13,13,13,0.8),transparent);
+        }
+
+        &::after{
+            right: -0.1rem;
+            background: linear-gradient(270deg, rgba(13,13,13,0.8),transparent);
+        }
+    }
+}
+
 @keyframes slide-in {
     from{
         opacity: 0;
@@ -492,7 +520,7 @@ section{
     .hero{
         .slide{
             &::before{
-                background: rgba($color: 0,0,0,0.7);
+                background: rgba(0,0,0,0.7);
             }
 
             .content{
