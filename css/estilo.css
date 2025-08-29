@@ -59,6 +59,14 @@ section {
   margin-right: 0.5rem;
 }
 
+.heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+  color: #ffdd95;
+}
+
 .header {
   position: sticky;
   top: 0;

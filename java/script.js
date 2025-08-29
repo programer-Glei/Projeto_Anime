@@ -52,3 +52,17 @@ var swiper = new Swiper(".hero-slider", {
         dynamicBullets:true,
     },
 });
+
+var swiper = new Swiper(".trending-slider", {
+
+    slidesPerView:"auto",
+    spaceBetween:20,
+    loop:true,
+    grabCursor:true,
+
+    autoplay:{
+        delay:2000,
+        disableOnInteraction:false,
+    }
+
+});
