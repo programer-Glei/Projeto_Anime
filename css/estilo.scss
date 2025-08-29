@@ -397,10 +397,24 @@ section{
                 padding: 0.1rem 0.5rem;
                 font-size: 1.5rem;
             }
+        }
 
-            h3{
-                margin: 1rem 0;
-                font-weight: normal;
+        h3{
+            margin: 1rem 0;
+            font-weight: normal;
+
+            a{
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 20rem;
+                white-space: nowrap;
+                color: $--white;
+                font-size: 1.8rem;
+
+                &:hover{
+                    color: $--main-color;
+                }
             }
         }
     }
