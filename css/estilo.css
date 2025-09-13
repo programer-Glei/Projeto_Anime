@@ -419,6 +419,36 @@ section {
   align-items: center;
   margin-bottom: 2rem;
 }
+.filter form .list-container .list {
+  flex: 1 1 25rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  background-color: #1a1a1a;
+  position: relative;
+}
+.filter form .list-container .list span {
+  color: #aaa;
+  font-size: 1.8rem;
+}
+.filter form .list-container .list .output {
+  color: #ffdd95;
+  padding: 0 1rem;
+  font-size: 2rem;
+  background: none;
+  width: 100%;
+}
+.filter form .list-container .list .items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: #1a1a1a;
+  padding: 0.5rem 1rem;
+}
 
 @keyframes slide-in {
   from {

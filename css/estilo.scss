@@ -468,6 +468,38 @@ section{
             gap: 1.5rem;
             align-items: center;
             margin-bottom: 2rem;
+
+            .list{
+                flex: 1 1 25rem;
+                padding: 1rem 1.5rem;
+                border-radius: 0.5rem;
+                display: flex;
+                background-color: $--light-black;
+                position: relative;
+
+                span{
+                    color: $--light-white;
+                    font-size: 1.8rem;
+                }
+
+                .output{
+                   color: $--main-color;
+                   padding: 0 1rem;
+                   font-size: 2rem;
+                   background: none;
+                   width: 100%;
+                }
+
+                .items{
+                    position: absolute;
+                    top: 100%; left: 0; right: 0;
+                    z-index: 1;
+                    border-bottom-left-radius: 0.5rem;
+                    border-bottom-right-radius: 0.5rem;
+                    background-color: $--light-black;
+                    padding: 0.5rem 1rem;
+                }
+            }
         }
     }
 }
