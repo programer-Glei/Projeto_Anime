@@ -89,7 +89,8 @@
     <!--filetr section starts-->
     <section class="filter">
         <h1 class="heading">Filter</h1>
-        <div class="list-container">
+        <form action="">
+            <div class="list-container">
             <div class="list">
                 <span>Type</span>
                 <input type="text" readonly value="Todos" class="output">
@@ -124,7 +125,35 @@
                     <div class="item">Aúdio original</div>
                 </div>
             </div>
+            <div class="list">
+                <span>Temporada</span>
+                <input type="text" readonly value="Todos" class="output">
+                <div class="items">
+                    <div class="item">Todos</div>
+                    <div class="item">Primavera</div>
+                    <div class="item">Outono</div>
+                    <div class="item">Inverno</div>
+                </div>
+            </div>
         </div>
+        <div class="genere">
+            <input type="checkbox" id="c1">
+            <label for="c1">Ação</label>
+            <input type="checkbox" id="c2">
+            <label for="c2">Aventura</label>
+            <input type="checkbox" id="c3">
+            <label for="c3">Carros</label>
+            <input type="checkbox" id="c4">
+            <label for="c4">Comédia</label>
+            <input type="checkbox" id="c5">
+            <label for="c5">Crime</label>
+            <input type="checkbox" id="c6">
+            <label for="c6">Comic</label>
+            <input type="checkbox" id="c7">
+            <label for="c">Demons</label>
+        </div>
+        <input type="submit" value="filter anime" class="btn">
+        </form>
     </section>
     <!--filter section ends-->
     <!--trending section starts-->
