@@ -407,6 +407,19 @@ section {
   text-align: center;
 }
 
+.filter form {
+  background-color: #222;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+.filter form .list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
 @keyframes slide-in {
   from {
     opacity: 0;
