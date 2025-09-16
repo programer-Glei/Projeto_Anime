@@ -468,8 +468,38 @@ section {
   padding-left: 2rem;
   color: #ffdd95;
 }
+.filter form .genere {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 .filter form .genere input {
   display: none;
+}
+.filter form .genere label {
+  font-size: 1.8rem;
+  color: #aaa;
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.filter form .genere label:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+}
+.filter form .btn {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.filter form .genere input:checked + label,
+.filter form .genere label:hover {
+  background-color: #ffdd95;
+  color: #222;
 }
 
 .filter form .list-container .list .items:hover,

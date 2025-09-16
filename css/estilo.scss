@@ -526,11 +526,41 @@ section{
         }
 
         .genere{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
             input{
                 display: none;
             }
+
+            label{
+                font-size: 1.8rem;
+                color: $--light-white;
+                background-color: $--light-black;
+                border-radius: 0.5rem;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                user-select: none;
+
+                &:hover{
+                    background-color: $--white;
+                    color: $--light-black;
+                }
+            }
+        }
+
+        .btn{
+            margin-top: 2rem;
+            margin-bottom: 0;
         }
     }
+}
+
+.filter form .genere input:checked + label,
+.filter form .genere label:hover{
+    background-color: $--main-color;
+    color: $--black;
 }
 
 .filter form .list-container .list .items:hover,
