@@ -477,6 +477,11 @@ section{
                 background-color: $--light-black;
                 position: relative;
 
+                &:hover{
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+
                 span{
                     color: $--light-white;
                     font-size: 1.8rem;
@@ -493,15 +498,46 @@ section{
                 .items{
                     position: absolute;
                     top: 100%; left: 0; right: 0;
-                    z-index: 1;
+                    z-index: 2;
                     border-bottom-left-radius: 0.5rem;
                     border-bottom-right-radius: 0.5rem;
                     background-color: $--light-black;
                     padding: 0.5rem 1rem;
+                    transform: scaleY(0);
+                    transform-origin: top;
+
+
+                    .item{
+                        cursor: pointer;
+                        background-color: $--black;
+                        padding: 0.5rem 1rem;
+                        font-size: 1.8rem;
+                        margin: 0.5rem 0;
+                        color: $--light-white;
+                        border-radius: 0.5rem;
+
+                        &:hover{
+                            padding-left: 2rem;
+                            color: $--main-color;
+                        }
+                    }
                 }
             }
         }
+
+        .genere{
+            input{
+                display: none;
+            }
+        }
     }
+}
+
+.filter form .list-container .list .items:hover,
+.filter form .list-container .list:hover .items,
+.filter form .list-container .list .output:focus + .items,
+.filter form .list-container .list .output:focus-within + .items{
+    transform: scaleY(1);
 }
 
 @keyframes slide-in {
