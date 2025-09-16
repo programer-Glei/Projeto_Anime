@@ -53,6 +53,18 @@ var swiper = new Swiper(".hero-slider", {
     },
 });
 
+let list_items = document.querySelectorAll('.filter form .list-container .list .items .item');
+
+list_items.forEach(items =>{
+
+    items.onclick = () =>{
+        list = items.parentElement.parentElement;
+        output = list.querySelector('.output');
+
+        output.value = items.innerHTML;
+    }
+})
+
 var swiper = new Swiper(".trending-slider", {
 
     slidesPerView:"auto",
