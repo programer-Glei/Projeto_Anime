@@ -570,6 +570,20 @@ section{
     transform: scaleY(1);
 }
 
+.anime-details{
+    .row{
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        background-color: $--light-black;
+
+        .image{
+            width: 20rem;
+        }
+    }
+}
+
 @keyframes slide-in {
     from{
         opacity: 0;
