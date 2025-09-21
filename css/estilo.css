@@ -519,6 +519,20 @@ section {
 .anime-details .row .image {
   width: 20rem;
 }
+.anime-details .row .image img {
+  height: 30rem;
+  width: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.anime-details .row .rating {
+  background-color: #222;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  text-align: center;
+}
 
 @keyframes slide-in {
   from {
