@@ -526,12 +526,27 @@ section {
      object-fit: cover;
   border-radius: 0.5rem;
 }
-.anime-details .row .ratings {
+.anime-details .row .image .ratings {
   background-color: #222;
   padding: 0.8rem 1rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
   text-align: center;
+}
+.anime-details .row .image .ratings p {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.anime-details .row .image .ratings p span {
+  color: #ffdd95;
+}
+.anime-details .row .image .ratings i {
+  font-size: 1.8rem;
+  color: yellow;
+}
+.anime-details .row .image .buttons .btn {
+  width: 100%;
 }
 
 @keyframes slide-in {
