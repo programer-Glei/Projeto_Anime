@@ -612,6 +612,44 @@ section{
             .buttons{
                 .btn{
                     width: 100%;
+                    text-align: center;
+
+                    &:last-child{
+                        background: crimson;
+                        color: $--white;
+
+                        &:hover{
+                            background-color: $--white;
+                            color: $--black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content{
+            .title{
+                font-size: 3rem;
+                color: $--white;
+            }
+
+            .synopsis{
+                font-size: 1.6rem;
+                color: $--light-white;
+                padding: 1rem 0;
+                line-height: 1.8;
+            }
+
+            .flex{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                padding: 1rem 0;
+
+                p{
+                    flex: 1 1 30rem;
+                    font-size: 1.8rem;
+                    color: $--light-white;
                 }
             }
         }

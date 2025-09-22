@@ -547,6 +547,36 @@ section {
 }
 .anime-details .row .image .buttons .btn {
   width: 100%;
+  text-align: center;
+}
+.anime-details .row .image .buttons .btn:last-child {
+  background: crimson;
+  color: #fff;
+}
+.anime-details .row .image .buttons .btn:last-child:hover {
+  background-color: #fff;
+  color: #222;
+}
+.anime-details .row .content .title {
+  font-size: 3rem;
+  color: #fff;
+}
+.anime-details .row .content .synopsis {
+  font-size: 1.6rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+.anime-details .row .content .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.anime-details .row .content .flex p {
+  flex: 1 1 30rem;
+  font-size: 1.8rem;
+  color: #aaa;
 }
 
 @keyframes slide-in {
